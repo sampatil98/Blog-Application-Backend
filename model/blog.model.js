@@ -1,6 +1,10 @@
 const mongoose=require("mongoose");
 
 const blogSchema= mongoose.Schema({
+    image:{
+        type:String,
+        require:true
+    },
     userid:{
         type:String,
         require:true

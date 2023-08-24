@@ -7,7 +7,7 @@ const blogRouter=Router();
 
 blogRouter.post("/create", async (req,res)=>{
     try {
-
+        console.log(req.body);
         const data= new blogModel(req.body);
         await data.save();
 
